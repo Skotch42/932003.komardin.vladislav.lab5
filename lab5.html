@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src="Lab5.js"></script>
+    <title>Frontend Task №5</title>
+    <style>
+
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        button {
+            color: white;
+            background: -webkit-linear-gradient(lime, forestgreen);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            font-size: 12px;
+            display: block;
+            border-radius: 1px;
+            border: none;
+            padding: 8px 10px;
+            margin: auto;
+        }
+
+        .back {
+            display: none;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+        }
+
+        .news {
+            background-color: #b6f5f5;
+            font-size: 14px;
+            width: 50%;
+            border-bottom: 2px solid black;
+            z-index: 2;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .news:hover {
+            background-color: #ff5555;
+        }
+
+        .des {
+            background-color: #e1ff73;
+            font-size: 14px;
+            display: none;
+            width: 28%;
+            margin: 300px auto;
+            padding: 20px;
+            padding: 3px 15px 15px 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        .visible {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="news1" class="news">
+        <h2 style="line-height:10%;margin-top: 10px;">Новость 1</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatum suscipit sed delectus facere veritatis autem quisquam unde nam doloribus?
+        </p>
+        <button id="but1" onclick="button1()">Открыть всплывающее окно</button>
+    </div>
+
+    <div id="news2" class="news">
+
+        <h2 style="line-height:10%;margin-top: 10px;">Новость 2</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatum suscipit sed delectus facere veritatis autem quisquam unde nam doloribus?
+        </p>
+
+        <button id="but2" onclick="button2()">Открыть всплывающее окно</button>
+
+    </div>
+
+    <div id="news3" class="news">
+
+        <h2 style="line-height:10%;margin-top: 10px;">Новость 3</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatum suscipit sed delectus facere veritatis autem quisquam unde nam doloribus?
+        </p>
+
+        <button id="but3" onclick="button3()">Открыть всплывающее окно</button>
+
+    </div>
+
+    <div class="back">
+
+        <div id="description1" class="des">
+
+            <h1>Новость 1</h1>
+            Новость 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores aut nihil! Corporis debitis labore fugiat id, eligendi ratione veritatis! <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.
+        </div>
+
+        <div id="description2" class="des">
+
+            <h1>Новость 2</h1>
+            Новость 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. A, alias. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.
+        </div>
+
+        <div id="description3" class="des">
+
+            <h1>Новость 3</h1>
+            Новость 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores aut nihil! Corporis debitis labore fugiat id, eligendi ratione veritatis! <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.
+        </div>
+
+    </div>
+
+    <div class="overlay"></div>
+
+</body>
+</html>
